@@ -4,9 +4,13 @@
 <p>Edad: {{ edad.value }}</p>
 <p>Empresa: {{empresa.value}}</p>
 
-Introduce la empresa : <input type="text" #empresa (keyup)="0">
+Introduce la empresa : <input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro">
 <br>
-Introduce la edad : <input type="number" #edad (keyup)="0">
+Introduce la edad : <input type="number" #edad (keyup)="0" [disabled]="habilitacionCuadro">
 <!--BOTON CON FUNCION EN TS-->
 <!-- <input type="button" value="Dale" (click)="llamaEmpresa(empresa.value)" >
 -->
+<br>
+<br>
+Registrado: <input type="checkbox" id="registro" [checked]="usuRegistrado">
+{{getRegistroUsuario()}}

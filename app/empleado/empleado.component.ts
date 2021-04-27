@@ -23,6 +23,15 @@ export class EmpleadoComponent implements OnInit {
   }*/
   //FUNCION PARA ACTUALIZAR TEXTO INTERPOLADO
   //llamaEmpresa(value:String){}
+
+//PROPERTY BIDING PROPIEDAD DE UN OBEJO
+  habilitacionCuadro=false;
+  usuRegistrado=true;
+
+  getRegistroUsuario(){
+    this.usuRegistrado=false;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
