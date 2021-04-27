@@ -27,9 +27,24 @@ export class EmpleadoComponent implements OnInit {
 //PROPERTY BIDING PROPIEDAD DE UN OBEJO
   habilitacionCuadro=false;
   usuRegistrado=true;
+  txtRegistro="No hay Nadie Registrado";
 
   getRegistroUsuario(){
     this.usuRegistrado=false;
+  }
+
+  setUsuarioRegistrado(event:Event){
+    //alert("El Usuario se acaba de registrar");
+    //this.txtRegistro="Usuario Registrado";
+
+    if((<HTMLInputElement>event.target).value=="si"){
+      this.txtRegistro="Usuario Registrado";
+    }else{
+      this.txtRegistro="Usuario No Registrado";
+    }
+
+
+
   }
 
   constructor() { }

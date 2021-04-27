@@ -12,5 +12,9 @@ Introduce la edad : <input type="number" #edad (keyup)="0" [disabled]="habilitac
 -->
 <br>
 <br>
-Registrado: <input type="checkbox" id="registro" [checked]="usuRegistrado">
+{{txtRegistro}}
+<br>
+Registrado: <input type="radio" name="nRegistro" value="si" [checked]="usuRegistrado" (click)="setUsuarioRegistrado($event)">
+<br>
+No registrado: <input type="radio" name="nRegistro" value="no" (click)="setUsuarioRegistrado($event)">
 {{getRegistroUsuario()}}
