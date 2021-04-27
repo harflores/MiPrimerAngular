@@ -1,1 +1,12 @@
-<p>Datos del Empleado</p>
+<!-- SE INSERTA TEXTO INTERPOLADO -->
+
+<p>Nombre del empledo: {{ nombre }} {{apellido}}</p>
+<p>Edad: {{ edad.value }}</p>
+<p>Empresa: {{empresa.value}}</p>
+
+Introduce la empresa : <input type="text" #empresa (keyup)="0">
+<br>
+Introduce la edad : <input type="number" #edad (keyup)="0">
+<!--BOTON CON FUNCION EN TS-->
+<!-- <input type="button" value="Dale" (click)="llamaEmpresa(empresa.value)" >
+-->
