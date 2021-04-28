@@ -15,7 +15,9 @@ export class EmpleadoComponent implements OnInit {
   apellido="Flores";
   // private edad=37; // SE PUEDE PROTEGER Y SE REQUIERE DE UNA FUNCION QUE RETORNE EDAD getEdad()
    //edad=37;
-  //empresa="ClaroChile";
+  empresa="Claro";
+
+  
 
 
   /*getEdad(){

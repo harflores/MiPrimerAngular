@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { EmpleadoComponent } from './empleado/empleado.component';
 import { EmpleadosComponent } from './empleados/empleados.component';
 import { EjemplotirarComponent } from './ejemplotirar/ejemplotirar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EjemplotirarComponent } from './ejemplotirar/ejemplotirar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
